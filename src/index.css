@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 207 90% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 24 95% 53%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 15% 93%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 207 85% 95%;
+    --accent-foreground: 207 90% 35%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 207 90% 45%;
+
+    --radius: 0.75rem;
+
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(207, 90%, 45%) 0%, hsl(207, 85%, 55%) 50%, hsl(24, 95%, 53%) 100%);
+    --card-shadow: 0 4px 24px -4px hsl(207 90% 45% / 0.12);
+    --card-shadow-hover: 0 8px 32px -4px hsl(207 90% 45% / 0.2);
+    --coupon-shadow: 0 6px 20px -2px hsl(207 90% 45% / 0.15);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans KR', sans-serif;
+    @apply font-bold text-foreground;
+  }
+}
+
+@layer components {
+  .hero-section {
+    background: var(--hero-gradient);
+    @apply text-primary-foreground;
+  }
+
+  .coupon-card {
+    @apply bg-card rounded-xl overflow-hidden transition-all duration-300 w-full;
+    box-shadow: var(--card-shadow);
+  }
+
+  .coupon-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    @apply -translate-y-1;
+  }
+
+  .cta-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 sm:px-6 py-3 font-semibold text-primary-foreground text-sm sm:text-base transition-all duration-200;
+    background: var(--hero-gradient);
+  }
+
+  .cta-button:hover {
+    @apply opacity-90 scale-105;
+  }
+
+  .copy-button {
+    @apply inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-xs sm:text-sm font-semibold text-primary-foreground transition-all duration-200 whitespace-nowrap;
+  }
+
+  .copy-button:hover {
+    @apply bg-primary/90;
+  }
+
+  .section-title {
+    @apply text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-muted-foreground text-base md:text-lg mb-8;
+  }
+
+  .badge-discount {
+    @apply inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-bold text-secondary-foreground;
+  }
+
+  .badge-category {
+    @apply inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground;
+  }
+
+  .table-container {
+    @apply overflow-x-auto rounded-xl border border-border -mx-4 sm:mx-0;
+  }
+
+  .table-container table {
+    @apply w-full text-xs sm:text-sm;
+  }
+
+  .table-container thead {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .table-container th {
+    @apply px-2 sm:px-4 py-2 sm:py-3 text-left font-semibold whitespace-nowrap;
+  }
+
+  .table-container td {
+    @apply px-2 sm:px-4 py-2 sm:py-3 border-t border-border;
+  }
+
+  .table-container tbody tr:hover {
+    @apply bg-accent/50;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-foreground/80 hover:text-primary transition-colors;
+  }
+
+  .nav-link-active {
+    @apply text-primary font-semibold;
+  }
+
+  .footer-link {
+    @apply text-sm text-muted-foreground hover:text-primary transition-colors;
+  }
+
+  .info-card {
+    @apply bg-card rounded-xl p-4 sm:p-6 transition-all duration-300;
+    box-shadow: var(--card-shadow);
+  }
+
+  .info-card:hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .faq-item {
+    @apply border border-border rounded-xl p-4 sm:p-5 bg-card transition-all duration-200;
+  }
+
+  .faq-item:hover {
+    @apply border-primary/30;
+  }
+}

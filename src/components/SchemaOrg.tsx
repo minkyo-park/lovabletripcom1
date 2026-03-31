@@ -1,0 +1,106 @@
+import { Helmet } from "react-helmet-async";
+
+interface SchemaOrgProps {
+  type: "WebPage" | "FAQPage" | "Article" | "WebSite";
+  title: string;
+  description: string;
+  url: string;
+  faqItems?: { question: string; answer: string }[];
+  breadcrumbs?: { name: string; url: string }[];
+}
+
+export default function SchemaOrg({ type, title, description, url, faqItems, breadcrumbs }: SchemaOrgProps) {
+  const baseUrl = "https://lvtrip.agd-offer.co.kr";
+
+  const schemas: object[] = [];
+
+  // WebSite schema
+  if (type === "WebSite") {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "트립닷컴 할인코드",
+      url: baseUrl,
+      description: "2026년 최신 트립닷컴 할인코드, 쿠폰, 프로모션 정보를 한눈에 확인하세요.",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${baseUrl}/?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    });
+  }
+
+  // WebPage schema
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": type === "FAQPage" ? "FAQPage" : type === "Article" ? "Article" : "WebPage",
+    name: title,
+    description,
+    url: `${baseUrl}${url}`,
+    publisher: {
+      "@type": "Organization",
+      name: "트립닷컴 할인코드",
+      url: baseUrl,
+    },
+    datePublished: "2026-01-01",
+    dateModified: "2026-03-08",
+    ...(type === "Article" && {
+      author: { "@type": "Organization", name: "트립닷컴 할인코드" },
+      headline: title,
+    }),
+  });
+
+  // FAQ schema
+  if (type === "FAQPage" && faqItems) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    });
+  }
+
+  // BreadcrumbList
+  if (breadcrumbs) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbs.map((bc, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: bc.name,
+        item: `${baseUrl}${bc.url}`,
+      })),
+    });
+  }
+
+  return (
+    <Helmet>
+      <title>트립닷컴 할인코드</title>
+      <meta name="description" content={description} />
+      <link rel="canonical" href={`${baseUrl}${url}`} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={`${baseUrl}${url}`} />
+      <meta property="og:image" content={`${baseUrl}/og-image.png`} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="트립닷컴 할인코드" />
+      <meta property="og:locale" content="ko_KR" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={`${baseUrl}/og-image.png`} />
+      {schemas.map((schema, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      ))}
+    </Helmet>
+  );
+}
