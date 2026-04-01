@@ -254,7 +254,7 @@ export default function FlightDiscount() {
         <div className="space-y-6 text-muted-foreground">
           <div className="info-card">
             <h3 className="font-bold text-foreground text-lg mb-3">📌 TRIPH3F 할인코드 상세 안내</h3>
-            <p className="mb-3">TRIPH3F는 현재 트립닷컴에서 제공하는 항공권 할인코드 중 가장 범용적이고 유용한 코드입니다. 전 세계 모든 노선에 적용 가능하며, 할인 한도가 없어 고가의 비즈니스/퍼스트클래스 항공권에서도 3% 할인을 받을 수 있습니다.</p>
+            <p className="mb-3">TRIPH3F는 현재 트립닷컴에서 제공하는 항공권 할인코드 중 가장 범용적이고 유용한 코드입니다. 더 많은 <a href="https://solar-revival.co.kr/tripcom" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">트립닷컴 할인코드</a>는 별도 페이지에서 확인할 수 있습니다. 전 세계 모든 노선에 적용 가능하며, 할인 한도가 없어 고가의 비즈니스/퍼스트클래스 항공권에서도 3% 할인을 받을 수 있습니다.</p>
             <p className="mb-3">예를 들어, 유럽행 비즈니스클래스 항공권이 300만원이라면 TRIPH3F 코드 적용 시 9만원의 할인을 받을 수 있습니다. 여기에 삼성카드 2% 추가 할인까지 적용하면 총 15만원을 절약할 수 있습니다.</p>
             <p>이 코드는 인플루언서 제휴 코드로, 반드시 제휴 링크를 통해 접속한 후 사용해야 합니다. 아래 버튼을 클릭하면 자동으로 제휴 링크가 적용됩니다.</p>
           </div>

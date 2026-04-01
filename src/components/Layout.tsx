@@ -87,7 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h3 className="text-lg font-bold mb-4 text-primary-foreground">트립닷컴 할인코드</h3>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                트립닷컴 할인코드는 2026년 최신 트립닷컴(Trip.com) 할인코드, 쿠폰, 프로모션 정보를 실시간으로 업데이트하여 제공하는 사이트입니다. 항공권, 호텔, 렌터카, 액티비티 등 다양한 카테고리의 할인 혜택을 한눈에 확인하세요.
+                <a href="https://xn--bk1b700b1cz40buif.com/dealstore/tripcom/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground hover:underline">트립닷컴 할인코드</a>는 2026년 최신 트립닷컴(Trip.com) 할인코드, 쿠폰, 프로모션 정보를 실시간으로 업데이트하여 제공하는 사이트입니다. 항공권, 호텔, 렌터카, 액티비티 등 다양한 카테고리의 할인 혜택을 한눈에 확인하세요.
               </p>
             </div>
             <div>

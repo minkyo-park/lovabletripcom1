@@ -294,7 +294,7 @@ export default function Index() {
             2026년 4월 현재, 트립닷컴에서는 메가세일, 슈퍼 데스티네이션 일본, GO 차이나, GO 태국 등 다양한 프로모션을 동시에 진행하고 있습니다. 또한 삼성카드, 롯데카드 등 카드사 제휴 할인을 함께 적용하면 더욱 큰 할인 혜택을 누릴 수 있습니다.
           </p>
           <p>
-            본 사이트 <strong className="text-foreground">트립닷컴 할인코드</strong>에서는 매월 최신 할인코드를 업데이트하고, 카테고리별 비교 분석, 사용 방법 가이드, 카드사 제휴 정보 등을 종합적으로 제공하여 여행자 여러분이 가장 합리적인 가격으로 여행을 즐길 수 있도록 돕고 있습니다.
+            본 사이트 <strong className="text-foreground">트립닷컴 할인코드</strong>에서는 매월 최신 할인코드를 업데이트하고, 카테고리별 비교 분석, 사용 방법 가이드, 카드사 제휴 정보 등을 종합적으로 제공하여 여행자 여러분이 가장 합리적인 가격으로 여행을 즐길 수 있도록 돕고 있습니다. <a href="https://travista.co.kr/trip-deals-promo-code/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">트립닷컴 할인코드</a> 관련 추가 정보도 함께 참고해 보세요.
           </p>
         </div>
       </section>
