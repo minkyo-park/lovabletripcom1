@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <nav className="container flex items-center justify-between h-16" aria-label="메인 네비게이션">
           <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
             <Ticket className="w-6 h-6" />
-            <span>트립닷컴 할인코드</span>
+            <span>트립닷컴 할인코드 항공권</span>
           </Link>
 
           {/* Desktop nav */}
@@ -85,9 +85,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-bold mb-4 text-primary-foreground">트립닷컴 할인코드</h3>
+              <h3 className="text-lg font-bold mb-4 text-primary-foreground">트립닷컴 할인코드 항공권</h3>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                <a href="https://xn--bk1b700b1cz40buif.com/dealstore/tripcom/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground hover:underline">트립닷컴 할인코드</a>는 2026년 최신 트립닷컴(Trip.com) 할인코드, 쿠폰, 프로모션 정보를 실시간으로 업데이트하여 제공하는 사이트입니다. 항공권, 호텔, 렌터카, 액티비티 등 다양한 카테고리의 할인 혜택을 한눈에 확인하세요.
+                <a href="https://xn--bk1b700b1cz40buif.com/dealstore/tripcom/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground hover:underline">트립닷컴 할인코드 항공권</a>는 2026년 최신 트립닷컴(Trip.com) 할인코드, 쿠폰, 프로모션 정보를 실시간으로 업데이트하여 제공하는 사이트입니다. 항공권, 호텔, 렌터카, 액티비티 등 다양한 카테고리의 할인 혜택을 한눈에 확인하세요.
               </p>
             </div>
             <div>
@@ -113,7 +113,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/50">
-            <p>© 2026 트립닷컴 할인코드. All rights reserved. | 트립닷컴 공식 제휴 파트너</p>
+            <p>© 2026 트립닷컴 할인코드 항공권. All rights reserved. | 트립닷컴 공식 제휴 파트너</p>
           </div>
         </div>
       </footer>

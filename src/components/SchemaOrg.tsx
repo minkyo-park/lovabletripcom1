@@ -19,9 +19,9 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
     schemas.push({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "트립닷컴 할인코드",
+      name: "트립닷컴 할인코드 항공권",
       url: baseUrl,
-      description: "2026년 최신 트립닷컴 할인코드, 쿠폰, 프로모션 정보를 한눈에 확인하세요.",
+      description: "5월 트립닷컴 할인코드 항공권 총정리! 트립닷컴 항공권 할인코드부터 호텔 할인코드까지, 지금 바로 쓸 수 있는 트립닷컴 할인쿠폰을 카테고리별로 정리했습니다. 매월 업데이트되는 트립닷컴 할인코드들을 확인해보세요!",
       potentialAction: {
         "@type": "SearchAction",
         target: `${baseUrl}/?q={search_term_string}`,
@@ -39,13 +39,13 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
     url: `${baseUrl}${url}`,
     publisher: {
       "@type": "Organization",
-      name: "트립닷컴 할인코드",
+      name: "트립닷컴 할인코드 항공권",
       url: baseUrl,
     },
     datePublished: "2026-01-01",
-    dateModified: "2026-03-08",
+    dateModified: "2026-05-01",
     ...(type === "Article" && {
-      author: { "@type": "Organization", name: "트립닷컴 할인코드" },
+      author: { "@type": "Organization", name: "트립닷컴 할인코드 항공권" },
       headline: title,
     }),
   });
@@ -82,7 +82,7 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
 
   return (
     <Helmet>
-      <title>트립닷컴 할인코드</title>
+      <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={`${baseUrl}${url}`} />
       <meta property="og:title" content={title} />
@@ -90,7 +90,7 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
       <meta property="og:url" content={`${baseUrl}${url}`} />
       <meta property="og:image" content={`${baseUrl}/og-image.png`} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="트립닷컴 할인코드" />
+      <meta property="og:site_name" content="트립닷컴 할인코드 항공권" />
       <meta property="og:locale" content="ko_KR" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
