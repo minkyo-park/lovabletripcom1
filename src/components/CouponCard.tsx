@@ -28,7 +28,7 @@ export default function CouponCard({ code, discount, category, description, expi
   return (
     <article className="coupon-card group flex flex-col">
       <div className="relative">
-        <img src={image} alt={`${category} ${discount} 할인코드 ${code}`} className="w-full h-28 sm:h-48 object-cover" loading="lazy" />
+        <img src={image} alt={`${category} ${discount} 할인코드 ${code}`} className="w-full aspect-square object-cover" loading="lazy" />
         <span className="badge-discount absolute top-2 right-2 text-[10px] sm:text-xs px-2 py-0.5 sm:px-3 sm:py-1">{discount}</span>
         <span className="badge-category absolute top-2 left-2 text-[10px] sm:text-xs px-2 py-0.5 sm:px-3 sm:py-1">{category}</span>
       </div>

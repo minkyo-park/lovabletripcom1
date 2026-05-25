@@ -6,10 +6,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import CouponCard from "@/components/CouponCard";
 
 import heroBanner from "@/assets/hero-banner.png";
-import couponFlight from "@/assets/coupon-flight-3pct.png";
-import couponHotel from "@/assets/coupon-hotel-12pct.png";
-import couponCar from "@/assets/coupon-car-8pct.png";
-import couponActivity from "@/assets/coupon-activity-5pct.png";
+import couponFlight from "@/assets/coupon-1.webp";
+import couponHotel from "@/assets/coupon-2.webp";
+import couponCar from "@/assets/coupon-3.webp";
+import couponActivity from "@/assets/coupon-4.webp";
 import couponNewmember from "@/assets/coupon-newmember.png";
 import couponMegasale from "@/assets/coupon-megasale.png";
 import couponJapan from "@/assets/coupon-japan.png";
