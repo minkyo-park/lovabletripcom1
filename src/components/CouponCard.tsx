@@ -10,25 +10,33 @@ interface CouponCardProps {
   category: string;
   description: string;
   expiry: string;
-  image: string;
+  image?: string;
   conditions?: string[];
+  link?: string;
 }
 
-export default function CouponCard({ code, discount, category, description, expiry, image, conditions }: CouponCardProps) {
+export default function CouponCard({ code, discount, category, description, expiry, image, conditions, link }: CouponCardProps) {
   const [copied, setCopied] = useState(false);
+  const targetLink = link || AFFILIATE_LINK;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
     toast.success(`할인코드 "${code}" 가 복사되었습니다!`);
     setTimeout(() => setCopied(false), 2000);
-    window.open(AFFILIATE_LINK, "_blank", "noopener,noreferrer");
+    window.open(targetLink, "_blank", "noopener,noreferrer");
   };
 
   return (
     <article className="coupon-card group flex flex-col">
       <div className="relative">
-        <img src={image} alt={`${category} ${discount} 할인코드 ${code}`} className="w-full aspect-square object-cover" loading="lazy" />
+        {image ? (
+          <img src={image} alt={`${category} ${discount} 할인코드 ${code}`} className="w-full aspect-square object-cover" loading="lazy" />
+        ) : (
+          <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+            <span className="text-2xl sm:text-4xl font-black text-primary text-center px-2">{discount}</span>
+          </div>
+        )}
         <span className="badge-discount absolute top-2 right-2 text-[10px] sm:text-xs px-2 py-0.5 sm:px-3 sm:py-1">{discount}</span>
         <span className="badge-category absolute top-2 left-2 text-[10px] sm:text-xs px-2 py-0.5 sm:px-3 sm:py-1">{category}</span>
       </div>
@@ -60,7 +68,7 @@ export default function CouponCard({ code, discount, category, description, expi
         )}
 
         <a
-          href={AFFILIATE_LINK}
+          href={targetLink}
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button w-full text-center text-[10px] sm:text-sm py-2 sm:py-3 px-2 sm:px-4 mt-auto animate-pulse-glow"
