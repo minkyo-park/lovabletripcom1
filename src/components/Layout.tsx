@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { Plane, Hotel, Ticket, BookOpen, Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ const navItems = [
   { path: "/tips", label: "사용법 & 꿀팁", icon: BookOpen },
 ];
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       </header>
 
-      <main className="flex-1">{children}</main>
+      <main className="flex-1"><Outlet /></main>
 
       <footer className="bg-foreground text-primary-foreground mt-16">
         <div className="container py-12">

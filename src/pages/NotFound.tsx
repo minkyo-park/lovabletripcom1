@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Head } from "vite-react-ssg";
 
 const NotFound = () => {
   const location = useLocation();
@@ -10,6 +11,10 @@ const NotFound = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
+      <Head>
+        <title>페이지를 찾을 수 없습니다 - 트립닷컴 할인코드 항공권</title>
+        <meta name="robots" content="noindex" />
+      </Head>
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
         <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>

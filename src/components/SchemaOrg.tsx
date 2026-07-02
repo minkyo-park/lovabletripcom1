@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 
 interface SchemaOrgProps {
   type: "WebPage" | "FAQPage" | "Article" | "WebSite";
@@ -81,7 +81,7 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
   }
 
   return (
-    <Helmet>
+    <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={`${baseUrl}${url}`} />
@@ -101,6 +101,6 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
           {JSON.stringify(schema)}
         </script>
       ))}
-    </Helmet>
+    </Head>
   );
 }
