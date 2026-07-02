@@ -40,37 +40,37 @@ const flightCoupons = [
   {
     code: "TRIPH3F", discount: "3% 할인", category: "항공권",
     description: "트립닷컴 항공권 3% 할인코드 – 전 노선 한도 없음",
-    expiry: "2026년 6월 30일", image: couponFlight,
+    expiry: "2026년 7월 30일", image: couponFlight,
     conditions: ["전 세계 모든 노선 적용", "할인 한도 없음 (가장 큰 혜택)", "KRW 결제 시 사용", "사용 횟수 제한 없음", "네이버페이 0.5% 추가 적립 가능"],
   },
   {
     code: "GNVGXDXJQK", discount: "10% 할인", category: "항공권 (태국)",
     description: "태국 도착 항공권 10% 할인코드",
-    expiry: "2026년 6월 30일", image: couponThailand,
-    conditions: ["태국 도착 항공권 한정", "탑승 기간: 2027년 6월 30일까지"],
+    expiry: "2026년 7월 30일", image: couponThailand,
+    conditions: ["태국 도착 항공권 한정", "탑승 기간: 2027년 7월 30일까지"],
   },
   {
     code: "VAIPTSTTGD", discount: "₩19,380 할인", category: "항공권 (광둥)",
     description: "광둥 도착 항공권 19,380원 할인코드",
-    expiry: "2026년 6월 30일", image: couponChina,
+    expiry: "2026년 7월 30일", image: couponChina,
     conditions: ["광둥 도착 항공권 한정", "정액 할인"],
   },
   {
     code: "RHTKAGWUHE", discount: "₩19,380 할인", category: "항공권 (홍콩)",
     description: "홍콩 도착 항공권 19,380원 할인코드",
-    expiry: "2026년 6월 30일", image: couponHongkong,
+    expiry: "2026년 7월 30일", image: couponHongkong,
     conditions: ["홍콩 도착 항공권 한정", "정액 할인"],
   },
   {
     code: "GNXNCPVJVD", discount: "₩19,380 할인", category: "항공권 (마카오)",
     description: "마카오 도착 항공권 19,380원 할인코드",
-    expiry: "2026년 6월 30일", image: couponMacau,
+    expiry: "2026년 7월 30일", image: couponMacau,
     conditions: ["마카오 도착 항공권 한정", "정액 할인"],
   },
   {
     code: "TOSSF05", discount: "5% 할인", category: "항공권 (토스페이)",
     description: "토스페이 결제 시 항공권 5% 할인 (최대 6만원)",
-    expiry: "2026년 6월 30일",
+    expiry: "2026년 7월 30일",
     conditions: [
       "토스페이 결제 시 항공권 5% 할인",
       "최대 6만원 할인, 최소 사용 금액 없음",
@@ -87,8 +87,8 @@ export default function FlightDiscount() {
     <>
       <SchemaOrg
         type="Article"
-        title="트립닷컴 항공권 할인코드 2026년 6월 - 최대 10% 할인"
-        description="2026년 6월 최신 트립닷컴 항공권 할인코드 총정리. 전 노선 3% 할인부터 태국 10%, 중국·홍콩·마카오 정액 할인까지 모든 항공권 할인코드를 확인하세요."
+        title="트립닷컴 항공권 할인코드 2026년 7월 - 최대 10% 할인"
+        description="2026년 7월 최신 트립닷컴 항공권 할인코드 총정리. 전 노선 3% 할인부터 태국 10%, 중국·홍콩·마카오 정액 할인까지 모든 항공권 할인코드를 확인하세요."
         url="/flight-discount"
         breadcrumbs={[
           { name: "홈", url: "/" },
@@ -104,7 +104,7 @@ export default function FlightDiscount() {
         <div className="container relative text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Plane className="w-8 h-8" />
-            <span className="badge-discount text-sm">2026년 6월 최신</span>
+            <span className="badge-discount text-sm">2026년 7월 최신</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4">트립닷컴 항공권 할인코드</h1>
           <p className="text-lg opacity-90 max-w-2xl mx-auto mb-6">
