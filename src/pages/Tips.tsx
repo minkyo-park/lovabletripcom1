@@ -283,9 +283,9 @@ export default function Tips() {
               <thead><tr><th>시기</th><th>프로모션</th><th>주요 혜택</th><th>추천 상품</th></tr></thead>
               <tbody>
                 <tr><td>1~2월</td><td>설 연휴 특가</td><td>항공권·호텔 최대 30% 할인</td><td>동남아, 일본</td></tr>
-                <tr><td className="font-bold text-primary">4월 (현재)</td><td className="font-bold text-primary">메가세일 + 슈퍼 데스티네이션</td><td className="font-bold text-primary">항공 10만원↓, 호텔 10만원↓</td><td className="font-bold text-primary">일본, 태국, 중국</td></tr>
+                <tr><td>4월</td><td>메가세일 + 슈퍼 데스티네이션</td><td>항공 10만원↓, 호텔 10만원↓</td><td>일본, 태국, 중국</td></tr>
                 <tr><td>4~7월</td><td>봄 여행 시즌</td><td>벚꽃 여행 특가</td><td>일본, 대만</td></tr>
-                <tr><td>6~8월</td><td>여름 휴가 프로모션</td><td>리조트·해변 호텔 특가</td><td>동남아, 하와이</td></tr>
+                <tr><td className="font-bold text-primary">6~8월 (현재)</td><td className="font-bold text-primary">여름 휴가 프로모션</td><td className="font-bold text-primary">리조트·해변 호텔 특가</td><td className="font-bold text-primary">동남아, 하와이</td></tr>
                 <tr><td>9~10월</td><td>가을 여행 특가</td><td>유럽·미주 항공권 할인</td><td>유럽, 미국</td></tr>
                 <tr><td>11월</td><td>블랙프라이데이</td><td>연중 최대 할인 (최대 50%)</td><td>전 세계</td></tr>
                 <tr><td>12월</td><td>연말 특가</td><td>겨울 여행·스키 패키지</td><td>일본, 유럽</td></tr>
