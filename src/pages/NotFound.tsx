@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <Head>
-        <title>페이지를 찾을 수 없습니다 - 트립닷컴 할인코드 항공권</title>
+        <title>페이지를 찾을 수 없습니다 - 트립닷컴 쿠폰</title>
         <meta name="robots" content="noindex" />
       </Head>
       <div className="text-center">
