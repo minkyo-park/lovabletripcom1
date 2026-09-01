@@ -40,8 +40,8 @@ const hotelCoupons = [
   {
     code: "VSZZETGULJ", discount: "10% 할인", category: "호텔 (태국)",
     description: "태국 호텔 10% 할인 인플루언서 코드",
-    expiry: "2026년 8월 31일", image: couponHotelThailand,
-    conditions: ["태국 호텔 한정", "투숙 기간: 2026년 8월 31일까지", "사용 횟수 제한 없음", "KRW 결제 시 사용"],
+    expiry: "2026년 9월 30일", image: couponHotelThailand,
+    conditions: ["태국 호텔 한정", "투숙 기간: 2026년 9월 30일까지", "사용 횟수 제한 없음", "KRW 결제 시 사용"],
   },
   {
     code: "1JOEKI", discount: "8% 쿠폰", category: "신규회원",
@@ -52,19 +52,19 @@ const hotelCoupons = [
   {
     code: "TRIPCAR8", discount: "8% 할인", category: "렌터카",
     description: "트립닷컴 렌터카 8% 할인코드",
-    expiry: "2026년 8월 31일", image: couponCar,
+    expiry: "2026년 9월 30일", image: couponCar,
     conditions: ["전 세계 렌터카 적용", "자유여행 필수 아이템"],
   },
   {
     code: "TRIPCAR7", discount: "7% 할인", category: "렌터카",
     description: "트립닷컴 렌터카 7% 할인코드",
-    expiry: "2026년 8월 31일", image: couponCar7,
+    expiry: "2026년 9월 30일", image: couponCar7,
     conditions: ["전 세계 렌터카 적용", "TRIPCAR8 미적용 시 사용"],
   },
   {
     code: "TOSSH05", discount: "5% 할인", category: "호텔 (토스페이)",
     description: "토스페이 결제 시 호텔 5% 할인 (최대 6만원)",
-    expiry: "2026년 8월 31일",
+    expiry: "2026년 9월 30일",
     conditions: [
       "토스페이 결제 시 호텔 5% 할인",
       "최대 6만원 할인, 최소 사용 금액 없음",
@@ -81,8 +81,8 @@ export default function HotelDiscount() {
     <>
       <SchemaOrg
         type="Article"
-        title="트립닷컴 호텔 할인코드 2026년 8월 - 최대 12% 할인"
-        description="2026년 8월 최신 트립닷컴 호텔 할인코드 총정리. 인플루언서 10% 할인, 신규회원 8% 쿠폰, 롯데카드 2% 자동 할인, 웰컴 쿠폰팩까지 모든 호텔 할인 정보를 확인하세요."
+        title="트립닷컴 호텔 할인코드 2026년 9월 - 최대 12% 할인"
+        description="2026년 9월 최신 트립닷컴 호텔 할인코드 총정리. 인플루언서 10% 할인, 신규회원 8% 쿠폰, 롯데카드 2% 자동 할인, 웰컴 쿠폰팩까지 모든 호텔 할인 정보를 확인하세요."
         url="/hotel-discount"
         breadcrumbs={[
           { name: "홈", url: "/" },
@@ -98,7 +98,7 @@ export default function HotelDiscount() {
         <div className="container relative text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Hotel className="w-8 h-8" />
-            <span className="badge-discount text-sm">2026년 8월 최신</span>
+            <span className="badge-discount text-sm">2026년 9월 최신</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4">트립닷컴 호텔 할인코드</h1>
           <p className="text-lg opacity-90 max-w-2xl mx-auto mb-6">
@@ -119,11 +119,11 @@ export default function HotelDiscount() {
           <table>
             <thead><tr><th>카테고리</th><th>할인코드</th><th>할인혜택</th><th>적용 대상</th><th>마감</th></tr></thead>
             <tbody>
-              <tr><td>호텔</td><td><CopyBtn code="VSZZETGULJ" /></td><td className="font-bold text-primary">10% 할인</td><td>태국 호텔 한정</td><td>26/08/31</td></tr>
+              <tr><td>호텔</td><td><CopyBtn code="VSZZETGULJ" /></td><td className="font-bold text-primary">10% 할인</td><td>태국 호텔 한정</td><td>26/09/30</td></tr>
               <tr><td>호텔</td><td><CopyBtn code="1JOEKI" /></td><td className="font-bold text-primary">8% 쿠폰 지급</td><td>신규회원</td><td>가입 후 7일</td></tr>
               <tr><td>호텔</td><td>롯데카드 자동적용</td><td className="font-bold text-primary">2% 자동 할인</td><td>롯데카드 결제</td><td>월별 선착순</td></tr>
-              <tr><td>렌터카</td><td><CopyBtn code="TRIPCAR8" /></td><td className="font-bold text-primary">8% 할인</td><td>전 세계</td><td>26/08/31</td></tr>
-              <tr><td>렌터카</td><td><CopyBtn code="TRIPCAR7" /></td><td className="font-bold text-primary">7% 할인</td><td>전 세계</td><td>26/08/31</td></tr>
+              <tr><td>렌터카</td><td><CopyBtn code="TRIPCAR8" /></td><td className="font-bold text-primary">8% 할인</td><td>전 세계</td><td>26/09/30</td></tr>
+              <tr><td>렌터카</td><td><CopyBtn code="TRIPCAR7" /></td><td className="font-bold text-primary">7% 할인</td><td>전 세계</td><td>26/09/30</td></tr>
             </tbody>
           </table>
         </div>

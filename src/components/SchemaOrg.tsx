@@ -21,7 +21,7 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
       "@type": "WebSite",
       name: "트립닷컴 쿠폰",
       url: baseUrl,
-      description: "8월 트립닷컴 쿠폰 총정리! 트립닷컴 항공권 할인코드부터 호텔 할인코드까지, 지금 바로 쓸 수 있는 트립닷컴 할인쿠폰을 카테고리별로 정리했습니다. 매월 업데이트되는 트립닷컴 할인코드들을 확인해보세요!",
+      description: "9월 트립닷컴 쿠폰 총정리! 트립닷컴 항공권 할인코드부터 호텔 할인코드까지, 지금 바로 쓸 수 있는 트립닷컴 할인쿠폰을 카테고리별로 정리했습니다. 매월 업데이트되는 트립닷컴 할인코드들을 확인해보세요!",
       potentialAction: {
         "@type": "SearchAction",
         target: `${baseUrl}/?q={search_term_string}`,
@@ -43,7 +43,7 @@ export default function SchemaOrg({ type, title, description, url, faqItems, bre
       url: baseUrl,
     },
     datePublished: "2026-01-01",
-    dateModified: "2026-08-01",
+    dateModified: "2026-09-01",
     ...(type === "Article" && {
       author: { "@type": "Organization", name: "트립닷컴 쿠폰" },
       headline: title,
